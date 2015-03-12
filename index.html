@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>End Portal Finder by AldoMaine</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/AldoMaine/EndPortalFinder">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>End Portal Finder</h1>
+            <h2>Find the End Portal in Minecraft!</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/AldoMaine/EndPortalFinder/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/AldoMaine/EndPortalFinder/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>End Portal Finder
+Find the End Portal in Minecraft!</p>
+
+<p>Eventually we all want to test ourselves in the ultimate challenge, the end.  However, the portal that allows us to travel to the end is usually hidden deep below the surface.  The typical advice on how to find the end portal is: get an eye of ender, throw it, look where it goes and travel in that direction.  Repeat as needed until the eye hovers a bit then dives into the ground.  And so on.  The problem is that eyes of ender are hard to come by and as you toss them about, they have a 20-25% chance of disappearing on each toss.</p>
+
+<p>So I wanted to develop an efficient technique to zero in on the end portal’s location with the least number of throws.  I settled on a triangulation technique that uses the bearings to the portal taken at two points.  The math behind this is pretty basic; each point and bearing defines a line.  The two lines intersect at the portal.  All we have to do is solve a couple of simultaneous equations for the unknown X and Z.  Simple, right?</p>
+
+<p>Well, I know not everyone enjoys solving math problem so I made this little Windows app to make it easy.</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/AldoMaine">AldoMaine</a> can be found on <a href="https://github.com/AldoMaine/EndPortalFinder">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
