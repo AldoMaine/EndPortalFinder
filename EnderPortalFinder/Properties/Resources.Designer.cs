@@ -59,5 +59,15 @@ namespace EnderPortalFinder.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] How_To_Use_the_End_Portal_Finder {
+            get {
+                object obj = ResourceManager.GetObject("How_To_Use_the_End_Portal_Finder", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

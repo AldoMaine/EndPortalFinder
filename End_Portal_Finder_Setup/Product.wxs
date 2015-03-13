@@ -30,6 +30,8 @@
           </Component>
         </Directory>
       </Directory>
+
+
       <Directory Id="DesktopFolder" Name="Desktop" />
       <Directory Id="ProgramMenuFolder" >
         <Directory Id="ProgramMenuDir" Name="End Portal Finder">
@@ -39,35 +41,29 @@
             <Shortcut Id="UninstallProduct" Name="Uninstall End Portal Finder" Description="Uninstalls the application"
                       Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]" />
           </Component>
+        
         </Directory>
       </Directory>
     </Directory>
+
+    <!--<DirectoryRef Id="Dukely_Enterprises">
+       <Component Id="documentation.html" Guid="5BF831EE-B9E7-4A85-A457-C33E9CB2DE68">
+            <File Id="documentation.html" Source="..\..\How To Use the End Portal Finder.mht" KeyPath="yes"/>
+          </Component>
+    </DirectoryRef>-->
+    
     <Feature Id="ProductFeature" Title="Main Feature" Level="1" >
       <ComponentRef Id="EndPortalFinder.exe" />
+      <!--<ComponentRef Id="documentation.html" />-->
       <ComponentRef Id="StartMenuShortcuts" />
     </Feature>
     <UI />
     <UIRef Id="WixUI_Minimal"/>
-    <Icon Id="DesktopIcon.exe" SourceFile="EndFinder.ico"/>
-    <Icon Id="StartMenuIcon.exe" SourceFile="EndFinder.ico"/>
+    <Icon Id="DesktopIcon.exe" SourceFile="EndPortal.ico"/>
+    <Icon Id="StartMenuIcon.exe" SourceFile="EndPortal.ico"/>
 
     <Property  Id="ARPPRODUCTICON" Value="EndFinder.ico"/>
 
   </Product>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </Wix>

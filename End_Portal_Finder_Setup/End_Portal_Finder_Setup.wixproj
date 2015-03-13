@@ -34,9 +34,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EndFinder.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <WixExtension Include="WixNetFxExtension">
       <HintPath>$(WixExtDir)\WixNetFxExtension.dll</HintPath>
       <Name>WixNetFxExtension</Name>
@@ -45,6 +42,9 @@
       <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
       <Name>WixUIExtension</Name>
     </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EndPortal.ico" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--

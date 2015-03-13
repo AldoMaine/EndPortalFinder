@@ -1,10 +1,15 @@
 ﻿using System;
+using System.IO;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace EnderPortalFinder
 {
     public partial class Form1 : Form
     {
+
+        string path;
+        
         public Form1()
         {
             InitializeComponent();
@@ -13,6 +18,11 @@ namespace EnderPortalFinder
         private void Form1_Load(object sender, EventArgs e)
         {
             input_TextChanged(this, null);
+
+            path = Application.StartupPath;
+
+            byte[] myfile = Properties.Resources.How_To_Use_the_End_Portal_Finder;
+            File.WriteAllBytes(path + "\\instructions.mht", myfile);
         }
 
 
@@ -70,8 +80,8 @@ namespace EnderPortalFinder
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {            
-            System.Diagnostics.Process.Start("..\\..\\How To Use the End Portal Finder.mht");
+        {
+            Process.Start(path + "\\instructions.mht");           
         }
 
     }
